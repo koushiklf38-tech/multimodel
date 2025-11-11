@@ -106,6 +106,22 @@ const STATES = [
   updateBalance(slider.value);
 })();
 
+
+document.getElementById('submitOpinion').addEventListener('click', function() {
+  const box = document.getElementById('opinionBox');
+  const msg = document.getElementById('opinionMsg');
+  if (box.value.trim() === '') {
+    msg.textContent = 'Please enter your opinion before submitting.';
+    msg.style.color = 'red';
+  } else {
+    msg.textContent = 'Thank you for sharing your opinion!';
+    msg.style.color = 'green';
+    box.value = '';
+  }
+});
+
+
+
 // ========== Poll Logic ==========
 
 (function setupPoll() {
