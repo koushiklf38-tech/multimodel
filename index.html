@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AI Should Be a Partner, Not a Replacement</title>
-  <meta name="description" content="A multimodal website arguing that AI should collaborate with humans instead of replacing them." />
+  <meta name="description" content="AI and humans working together as partners." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,17 +12,15 @@
 <header>
   <div class="wrap header-inner">
     <div class="brand">
-      <h3>🤝 AI Should Be a Partner, Not a Replacement</h3>
+      <h3>🤝 AI as a Partner</h3>
     </div>
 
     <nav aria-label="Sections">
       <a href="#what-is-ai">AI?</a>
-      <a href="#can-do">AI Can</a>
-      <a href="#compare">Compare</a>
+      <a href="#can-do">AI vs Human</a>
       <a href="#majors">Majors</a>
-      <a href="#jobs">Jobs</a>
       <a href="#poll">Poll</a>
-      <a href="#conclusion">Conclusion</a>
+      <a href="#conclusion">End</a>
     </nav>
 
     <button id="themeToggle" class="btn theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
@@ -35,197 +33,222 @@
 <main class="wrap">
 
   <section class="hero">
-    <div class="card fade-in">
-      <h2>Thesis</h2>
-      <p>AI is best used as a <span class="hl">collaborator</span>. It handles pattern-heavy, repetitive, or large-scale tasks, while humans supply context, ethics, empathy, and the final call. Together, outcomes are better—and more fair—than either alone.</p>
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-text fade-in">
+      <p class="pill">Human + AI • Better Together</p>
+      <h2>Let AI help — not replace you.</h>
+      <p class="hero-sub">
+        AI does the heavy data work. Humans bring goals, values, and judgment.
+      </p>
+      <div class="hero-cta-row">
+        <a href="#poll" class="btn primary">Vote in the Poll</a>
+        <a href="#what-is-ai" class="btn ghost">See how it works</a>
+      </div>
     </div>
 
-    <div class="card rise-in">
-      <h3>Quick Demo: Balance the Partnership</h3>
-      <div class="compare">
-        <label for="balance">Human ↔︎ AI collaboration</label>
-        <input id="balance" type="range" min="0" max="100" value="50" />
-        <!-- Text-first, no image -->
-        <div class="collab-stats" aria-live="polite">
-          <div class="legend">
-            <span class="dot human"></span>
-            <span id="humanPctLbl">Human 50%</span>
-            <span class="dot ai"></span>
-            <span id="aiPctLbl">AI 50%</span>
-          </div>
-          <h4 id="balanceTitle" class="title">Balanced</h4>
-          <p id="balanceDesc" class="desc">Human goals + AI speed. Best of both.</p>
-          <div class="progress" role="img" aria-label="Human and AI contribution split bar">
-            <div id="progressHuman" class="progress-human"></div>
-            <div id="progressAi" class="progress-ai"></div>
-          </div>
+    <div class="hero-visual rise-in">
+      <div class="flow-pills">
+        <div class="flow-item">
+          <span class="flow-title">Human</span>
+          <span class="flow-sub">Goals &amp; judgment</span>
+        </div>
+
+        <div class="flow-connector"></div>
+
+        <div class="flow-item flow-main">
+          <span class="flow-title">Collaboration</span>
+          <span class="flow-sub">Human + AI together</span>
+        </div>
+
+        <div class="flow-connector"></div>
+
+        <div class="flow-item">
+          <span class="flow-title">AI</span>
+          <span class="flow-sub">Speed &amp; data</span>
+        </div>
+      </div>
+
+      <p class="hero-caption">Balance the partnership below 👇</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- BALANCE SLIDER -->
+  <section class="card slider-card">
+    <h2>Balance Human ↔ AI</h2>
+    <p class="section-sub">Move the slider to see what changes.</p>
+    <div class="compare">
+      <input id="balance" type="range" min="0" max="100" value="50" />
+      <div class="collab-stats" aria-live="polite">
+        <div class="legend">
+          <span class="dot human"></span>
+          <span id="humanPctLbl">Human 50%</span>
+          <span class="dot ai"></span>
+          <span id="aiPctLbl">AI 50%</span>
+        </div>
+        <h3 id="balanceTitle" class="title">Balanced</h3>
+        <p id="balanceDesc" class="desc">Human goals + AI speed. Best mix.</p>
+        <div class="progress" role="img" aria-label="Human and AI contribution split bar">
+          <div id="progressHuman" class="progress-human"></div>
+          <div id="progressAi" class="progress-ai"></div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHAT IS AI -->
   <section class="card" id="what-is-ai">
     <h2>What is AI?</h2>
-    <p><strong>Artificial Intelligence</strong> allows computers to perform tasks that usually require human intelligence—like recognizing images, generating language, or planning actions. It includes <em>machine learning</em> (learning from data) and <em>generative AI</em> (creating text, images, and code).</p>
+    <p>
+      <strong>Artificial Intelligence</strong> lets computers spot patterns, make predictions, and create text, images, and code.
+      It’s a tool — not a replacement for people.
+    </p>
   </section>
 
-  <section class="grid g2" id="can-do">
+  <!-- AI VS HUMAN -->
+  <section class="grid g2 section-block" id="can-do">
     <div class="card hover-rise">
-      <h2>What AI can do</h2>
+      <h2>AI is great at…</h2>
       <ul>
-        <li>Spot patterns across millions of examples.</li>
-        <li>Generate drafts, summaries, and translations.</li>
-        <li>Monitor sensors and detect anomalies in real time.</li>
-        <li>Act as a <em>copilot</em> suggesting ideas or corrections.</li>
+        <li>Scanning huge amounts of data</li>
+        <li>Summarizing and drafting fast</li>
+        <li>Watching sensors 24/7</li>
       </ul>
-      <span class="badge good">Strength: Speed & scale</span>
-    </div>
-    <div class="card hover-rise" id="humans">
-      <h2>What humans do best</h2>
-      <ul>
-        <li>Define goals, ethics, and cultural meaning.</li>
-        <li>Show empathy, creativity, and flexibility.</li>
-        <li>Interpret complex emotions and context.</li>
-      </ul>
-      <span class="badge warn">Strength: Judgment & values</span>
-    </div>
-  </section>
-
-  <section class="grid g2">
-    <div class="card hover-rise">
-      <h2>Humans <em>without</em> AI</h2>
-      <ul>
-        <li>Slower, limited by time and attention.</li>
-        <li>Repetitive work increases fatigue.</li>
-      </ul>
-      <span class="badge">Limitation: Processing Rate</span>
+      <span class="badge good">Strength: Speed &amp; Scale</span>
     </div>
     <div class="card hover-rise">
-      <h2>Humans <em>with</em> AI</h2>
+      <h2>Humans are great at…</h2>
       <ul>
-        <li>Faster drafts, deeper insights.</li>
-        <li>Frees time for creative and ethical work.</li>
+        <li>Setting goals and values</li>
+        <li>Understanding people &amp; emotion</li>
+        <li>Making final decisions</li>
       </ul>
-      <span class="badge good">Benefit: Quality + efficiency</span>
+      <span class="badge warn">Strength: Judgment</span>
     </div>
   </section>
 
-  <section class="card" id="compare">
-    <h2>AI vs. Human Strengths — Working Together</h2>
+  <!-- SIMPLE COMPARISON -->
+  <section class="card section-block" id="compare">
+    <h2>Working Together</h2>
     <table>
       <thead>
         <tr>
           <th>Task</th>
-          <th>AI Excels</th>
-          <th>Human Excels</th>
-          <th>Best Collaboration</th>
+          <th>AI</th>
+          <th>Human</th>
+          <th>Together</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Summarizing large texts</td>
-          <td>🟢 Speed, consistency, and memory</td>
-          <td>🟡 Context sensitivity, nuance</td>
-          <td><strong>AI drafts → Human refines for clarity and tone</strong></td>
+          <td>Summarizing a long report</td>
+          <td>⚡ Fast draft</td>
+          <td>🎯 Fix tone</td>
+          <td><strong>AI writes, human edits</strong></td>
         </tr>
         <tr>
-          <td>Diagnosing complex or rare issues</td>
-          <td>🟡 Pattern recognition and data analysis</td>
-          <td>🟢 Critical thinking and experience</td>
-          <td><strong>AI suggests → Expert verifies and decides</strong></td>
+          <td>Finding patterns in data</td>
+          <td>📊 Detects trends</td>
+          <td>🧠 Decides what to do</td>
+          <td><strong>AI suggests, human chooses</strong></td>
         </tr>
         <tr>
-          <td>Generating creative ideas</td>
-          <td>🟡 Rapid brainstorming and variation</td>
-          <td>🟢 Emotional insight and originality</td>
-          <td><strong>Human leads → AI expands and supports</strong></td>
-        </tr>
-        <tr>
-          <td>Monitoring and repetitive tasks</td>
-          <td>🟢 Real-time alerts and precision</td>
-          <td>🟡 Ethical judgment and adaptability</td>
-          <td><strong>AI monitors → Human intervenes when needed</strong></td>
+          <td>Creative ideas</td>
+          <td>💡 Many options</td>
+          <td>✨ Picks what fits</td>
+          <td><strong>Brainstorm together</strong></td>
         </tr>
       </tbody>
     </table>
   </section>
 
-  <section class="card" id="majors">
-    <h2>AI Across Different Majors</h2>
-    <div class="grid g3">
-      <div class="card major hover-pop"><div class="icon">🐄</div><div><h3>Animal Science</h3><p>AI cameras detect cattle illness early to protect herds.</p><p><em>Example:</em> <span class="hl">Livestock health tracking</span></p></div></div>
-      <div class="card major hover-pop"><div class="icon">🧬</div><div><h3>Biology</h3><p>AI predicts protein structures, speeding new medicine research.</p><p><em>Example:</em> <span class="hl">Protein folding models</span></p></div></div>
-      <div class="card major hover-pop"><div class="icon">🏥</div><div><h3>Health</h3><p>AI scribes assist doctors, cutting paperwork time.</p><p><em>Example:</em> <span class="hl">Medical transcription tools</span></p></div></div>
-      <div class="card major hover-pop"><div class="icon">📚</div><div><h3>Education</h3><p>AI tutors adapt lessons to each student’s pace.</p><p><em>Example:</em> <span class="hl">Personalized learning apps</span></p></div></div>
-      <div class="card major hover-pop"><div class="icon">🛠️</div><div><h3>Engineering</h3><p>AI helps simulate and test designs before building.</p><p><em>Example:</em> <span class="hl">Generative design software</span></p></div></div>
-      <div class="card major hover-pop"><div class="icon">🎨</div><div><h3>Art & Design</h3><p>Artists use AI to prototype visuals and explore new styles.</p><p><em>Example:</em> <span class="hl">Image generation tools</span></p></div></div>
-      <div class="card major hover-pop"><div class="icon">🌾</div><div><h3>Agriculture</h3><p>AI predicts crop disease from drone images.</p><p><em>Example:</em> <span class="hl">Drone-based crop monitoring</span></p></div></div>
-      <div class="card major hover-pop"><div class="icon">💼</div><div><h3>Business</h3><p>AI forecasts trends and automates reports.</p><p><em>Example:</em> <span class="hl">Sales forecasting AI</span></p></div></div>
-      <div class="card major hover-pop"><div class="icon">💻</div><div><h3>Computer Science</h3><p>AI agents debug code and generate testing suites.</p><p><em>Example:</em> <span class="hl">Code assistant bots</span></p></div></div>
-    </div>
-  </section>
-
-  <section class="grid g2" id="jobs">
-    <div class="card hover-rise">
-      <h2>Will AI Take Over Jobs?</h2>
-      <p>Most roles will <em>change</em> instead of vanish. Routine tasks may automate, but humans remain vital for creativity, empathy, and ethics. AI takes care of repetitive work so people can focus on problem-solving and decision-making.</p>
-      <p>For example, in an office, AI can quickly sort emails and summarize reports, while humans decide the next steps or handle important meetings that require understanding and communication.</p>
-    </div>
-    <div class="card hover-rise">
-      <h2>New Jobs Created Across Majors</h2>
-      <ul>
-        <li><strong>Computer Science:</strong> AI Product Manager</li>
-        <li><strong>Biology:</strong> AI-Driven Biomedical Researcher</li>
-        <li><strong>Healthcare:</strong> Clinical AI Integration Specialist</li>
-        <li><strong>Education:</strong> AI Education Designer</li>
-        <li><strong>Business:</strong> Automation Strategy Advisor</li>
-        <li><strong>Law & Policy:</strong> AI Ethics Consultant</li>
-        <li><strong>Environmental Science:</strong> AI Climate Modeler</li>
-        <li><strong>Agriculture:</strong> Precision Agriculture Analyst</li>
-        <li><strong>Art & Design:</strong> Generative Art Director</li>
-        <li><strong>Communications:</strong> AI-Enhanced Content Creator</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="card" id="poll">
-    <h2>Quick Poll: Should AI Be a Partner?</h2>
-    <p class="poll-note">Add your name and vote. Results are saved in your browser.</p>
-    <div class="poll-row poll-row-spaced">
-      <input type="text" id="pollName" placeholder="Your name (required)" aria-label="Your name" />
-      <div class="poll-options" role="group" aria-label="Poll options">
-        <label><input type="radio" name="pollChoice" value="agree" /> Agree — Partner</label>
-        <label class="ml-10"><input type="radio" name="pollChoice" value="neutral" /> Neutral / Unsure</label>
-        <label class="ml-10"><input type="radio" name="pollChoice" value="disagree" /> Disagree</label>
+  <!-- MAJORS -->
+  <section class="card section-block" id="majors">
+    <h2>AI Across Majors</h2>
+    <p class="section-sub">AI doesn’t belong to just one field.</p>
+    <div class="grid g3 majors-grid">
+      <div class="card major hover-pop">
+        <div class="icon">🐄</div>
+        <h3>Animal Science</h3>
+        <p>Camera systems flag sick animals early.</p>
       </div>
-      <button class="btn" id="pollSubmit">Vote</button>
-      <button class="btn secondary" id="pollClear">Clear My Vote</button>
+      <div class="card major hover-pop">
+        <div class="icon">🧬</div>
+        <h3>Biology</h3>
+        <p>Models help design new medicines faster.</p>
+      </div>
+      <div class="card major hover-pop">
+        <div class="icon">🏥</div>
+        <h3>Health</h3>
+        <p>AI scribes write notes so doctors focus on patients.</p>
+      </div>
+      <div class="card major hover-pop">
+        <div class="icon">📚</div>
+        <h3>Education</h3>
+        <p>Adaptive tutors match each student’s pace.</p>
+      </div>
+      <div class="card major hover-pop">
+        <div class="icon">💼</div>
+        <h3>Business</h3>
+        <p>Forecasts help teams plan smarter.</p>
+      </div>
+      <div class="card major hover-pop">
+        <div class="icon">💻</div>
+        <h3>Computer Science</h3>
+        <p>Code copilots speed up debugging and testing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLL -->
+  <section class="card section-block" id="poll">
+    <h2>Quick Poll</h2>
+    <p class="section-sub">Should AI be a partner, not a replacement?</p>
+    <div class="poll-row poll-row-spaced">
+      <input type="text" id="pollName" placeholder="Your name" aria-label="Your name" />
+      <div class="poll-options" role="group" aria-label="Poll options">
+        <label><input type="radio" name="pollChoice" value="agree" /> Partner</label>
+        <label><input type="radio" name="pollChoice" value="neutral" /> Not sure</label>
+        <label><input type="radio" name="pollChoice" value="disagree" /> Replace</label>
+      </div>
+      <button class="btn primary" id="pollSubmit">Vote</button>
+      <button class="btn secondary" id="pollClear">Clear</button>
     </div>
     <div id="pollMsg" class="poll-note" role="status" aria-live="polite"></div>
 
     <div class="grid g3 poll-card-container">
-      <div class="card">
-        <h4>Agree — Partner</h4>
-        <div class="poll-result-bar"><div id="barAgree" class="poll-result-fill"></div></div>
+      <div class="card card-mini">
+        <h4>Partner</h4>
+        <div class="poll-result-bar">
+          <div id="barAgree" class="poll-result-fill"></div>
+        </div>
         <div><span id="countAgree">0</span> votes · <span id="percentAgree">0%</span></div>
       </div>
-      <div class="card">
-        <h4>Neutral / Unsure</h4>
-        <div class="poll-result-bar"><div id="barNeutral" class="poll-result-fill"></div></div>
+      <div class="card card-mini">
+        <h4>Not Sure</h4>
+        <div class="poll-result-bar">
+          <div id="barNeutral" class="poll-result-fill"></div>
+        </div>
         <div><span id="countNeutral">0</span> votes · <span id="percentNeutral">0%</span></div>
       </div>
-      <div class="card">
-        <h4>Disagree</h4>
-        <div class="poll-result-bar"><div id="barDisagree" class="poll-result-fill"></div></div>
+      <div class="card card-mini">
+        <h4>Replace</h4>
+        <div class="poll-result-bar">
+          <div id="barDisagree" class="poll-result-fill"></div>
+        </div>
         <div><span id="countDisagree">0</span> votes · <span id="percentDisagree">0%</span></div>
       </div>
     </div>
   </section>
 
-  <section class="card" id="conclusion">
+  <!-- CONCLUSION -->
+  <section class="card section-block" id="conclusion">
     <h2>Conclusion</h2>
     <p>
-      In conclusion, AI should not replace human effort but rather work alongside it. When used as a partner, AI handles data-heavy, repetitive, and analytical tasks with speed and accuracy, while humans bring creativity, empathy, and ethical judgment to every decision. By setting human goals first, using AI for efficient data handling, and maintaining human oversight over fairness and meaning, we can create a balanced partnership that drives innovation responsibly. True progress happens when humans and AI collaborate—each doing what they do best—to achieve outcomes that are faster, smarter, and more ethical than either could accomplish alone.
+      AI works best as a partner. Let it handle data and repetition. Let humans handle meaning, empathy, and choices.
+      When both sides work together, the result is faster, smarter, and more fair.
     </p>
   </section>
 
